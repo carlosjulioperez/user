@@ -1,5 +1,20 @@
 # Getting Started
 
+# server.port=9090
+
+## Starting service
+$ ./gradlew bootRun
+$ ./gradlew bootRun --args='--server.port=9090'
+
+## Executing test
+$ ./gradlew test
+
+## Packaging app
+$ ./gradlew bootJar
+
+## Running H2 Console
+`http://localhost:9090/h2`
+
 ### Reference Documentation
 For further reference, please consider the following sections:
 
