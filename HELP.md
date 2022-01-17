@@ -13,7 +13,10 @@ $ ./gradlew test
 $ ./gradlew bootJar
 
 ## Running H2 Console
-`http://localhost:9090/h2`
+`http://localhost:8080/h2`
+
+## Swagger API documentation:
+`http://localhost:8080/swagger-ui/`
 
 ### Reference Documentation
 For further reference, please consider the following sections:

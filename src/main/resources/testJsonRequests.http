@@ -1,0 +1,10 @@
+## Rest Client tests
+
+### Create User
+POST http://localhost:8080/user/add
+Content-Type: application/json
+
+{
+  "name": "Carlos Julio Pérez",
+  "password": "456"
+}

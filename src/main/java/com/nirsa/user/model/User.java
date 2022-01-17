@@ -6,12 +6,12 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-import lombok.Builder;
+import com.nirsa.user.dto.UserDTO;
+
 import lombok.Data;
 
 @Entity
 @Data
-@Builder
 public class User {
     
     @Id
@@ -25,4 +25,10 @@ public class User {
     
     private String password;
  
+    public static User from(UserDTO userDTO){
+        User user = new User();
+        user.setName(userDTO.getName());
+        user.setPassword(userDTO.getPassword());
+        return user;
+    }
 }
